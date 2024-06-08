@@ -1,3 +1,3 @@
 const currentDate = new Date().toLocaleString();
 
-console.log(`Hello World! ${currentDate}`);
+console.log(`Hello ASL! ${currentDate}`);

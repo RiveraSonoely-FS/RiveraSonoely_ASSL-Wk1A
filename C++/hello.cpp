@@ -10,6 +10,6 @@ int main() {
 
     std::string current_time_str = std::ctime(&now_c);
 
-    std::cout << "Hello World! " << current_time_str;
+    std::cout << "Hello ASL! " << current_time_str;
     return 0;
 }
