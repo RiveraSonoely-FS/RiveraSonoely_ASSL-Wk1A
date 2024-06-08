@@ -1,9 +1,7 @@
-use std::time::{SystemTime, UNIX_EPOCH};
+use std::time::SystemTime;
 
 fn main() {
-    let current_time = SystemTime::now().duration_since(UNIX_EPOCH).expect("Time went backwards");
-    let seconds = current_time.as_secs();
-    let milliseconds = current_time.subsec_millis();
-
-    println!("Hello ASL! ", (seconds * 1000) + u64::from(milliseconds));
+    println!("Hello ASL!");
+    let current_time = SystemTime::now();
+    println!("{:?} ",current_time);
 }

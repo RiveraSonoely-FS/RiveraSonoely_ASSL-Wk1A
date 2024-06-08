@@ -2,8 +2,8 @@ FROM rust:latest
 
 WORKDIR /usr/src/app
 
-COPY . .
+COPY main.rs .
 
-RUN cargo build --release
+RUN rustc main.rs
 
-CMD ["./target/release/hello"]
+CMD ["./main"]
